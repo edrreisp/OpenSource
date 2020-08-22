@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/inner_frame_layout_padding">
+
+        <TextView
+            android:textColor="#3F51B5"
+            android:id="@+id/text"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_os" />
+
+
+        <Button
+            android:padding="10dp"
+            android:background="#CF3E3E"
+            android:id="@+id/button_read_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_sensor"
+            android:textSize="18dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_fahrenheit"
+            android:textColor="#E60E0E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/show_fahrenheit"/>
+
+        <TextView
+            android:textColor="#E60E0E"
+            android:id="@+id/textView_SensorResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>
